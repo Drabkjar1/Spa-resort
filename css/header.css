@@ -1,0 +1,107 @@
+header {
+  background-image: url(../img/backgroud.jpg);
+  background-size: cover;
+  padding-bottom: 100px;
+}
+menu {
+  background: rgb(198, 171, 114, 0.5);
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  column-gap: 5px;
+}
+header nav ul li {
+  display: flex;
+}
+header nav ul li a {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 10px;
+}
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.204);
+}
+header .nadpis {
+  color: rgb(1, 1, 1);
+  text-align: center;
+  margin-top: 200px;
+  text-shadow: 2px 6px 5px rgb(110 43 5);
+}
+header .nadpis h2 {
+  font-size: 100px;
+
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+header .nadpis h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+header .nadpis .social {
+  margin-top: 15px;
+}
+header .nadpis .social a {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  margin: 0 10px;
+}
+header .nadpis .social a:hover i.fa-facebook {
+  color: #1877f2;
+}
+header .nadpis .social a:hover i.fa-instagram {
+  color: #e4405f;
+}
+header .nadpis .social a:hover i.fa-youtube {
+  color: #cd201f;
+}
+@media (max-width: 700px) {
+  header .container {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  header nav ul li {
+    justify-content: center;
+  }
+  header nav ul li a {
+    padding: 10px 20px;
+  }
+  header a.logo {
+    display: flex;
+    justify-content: center;
+  }
+  header .nadpis {
+    margin-top: 30px;
+    font-size: 10vw;
+  }
+  header .nadpis h2 {
+    font-size: 1em;
+  }
+  header .nadpis h3 {
+    font-size: 0.3em;
+  }
+  header .nadpis .social a {
+    font-size: 0.8em;
+    margin: 0 0.2em;
+  }
+}
